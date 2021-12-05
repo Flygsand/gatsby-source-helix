@@ -1,0 +1,9 @@
+*
+!/gatsby-node.js
+!/index.js
+!/plugin/**/*
+!/util/**/*
+!/README.md
+!/LICENSE
+.env
+__tests__

@@ -1,0 +1,18 @@
+version: '3.9'
+services:
+  twitch-api:
+    build: twitch-api
+  site:
+    build:
+      context: ..
+      dockerfile: test/site/Dockerfile
+    depends_on:
+    - twitch-api
+  runner:
+    build:
+      context: ..
+      dockerfile: test/runner/Dockerfile
+    depends_on:
+    - twitch-api
+    - site
+    
