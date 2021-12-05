@@ -1,0 +1,14 @@
+---
+name: CI
+on:
+- push
+- pull_request
+jobs:
+  ci:
+    name: CI
+    runs-on: ubuntu-20.04
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2.4.0
+    - name: Run tests
+      run: docker-compose -f test/docker-compose.yml up --abort-on-container-exit --exit-code-from runner

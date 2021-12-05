@@ -1,0 +1,26 @@
+{
+  "name": "gatsby-source-helix",
+  "version": "0.1.0",
+  "description": "Gatsby source plugin for building websites using Twitch as a data source",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "gatsby-source-plugin",
+    "twitch"
+  ],
+  "author": "Martin Häger <martin.haeger@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "@twurple/api": "^5.0.9",
+    "@twurple/auth": "^5.0.9",
+    "@twurple/common": "^5.0.9"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "graphql-request": "^3.6.1",
+    "jest": "^27.4.0"
+  }
+}
