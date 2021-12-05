@@ -14,7 +14,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@twurple/api": "^5.0.9",
+    "@twurple/api": "^5.0.10",
     "@twurple/auth": "^5.0.9",
     "@twurple/common": "^5.0.9"
   },
