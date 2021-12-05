@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@twurple/api": "^5.0.9",
-    "@twurple/auth": "^5.0.9",
+    "@twurple/auth": "^5.0.10",
     "@twurple/common": "^5.0.9"
   },
   "devDependencies": {
