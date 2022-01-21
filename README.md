@@ -44,6 +44,20 @@ module.exports = {
 }
 ```
 
+```
+{
+  allHelixVideo {
+    edges {
+      node {
+        title
+        user_name
+        description
+      }
+    }
+  }
+}
+```
+
 A list of available fields can be found [here](https://dev.twitch.tv/docs/api/reference#get-clips). Note that the `id` field is assigned by 
 the plugin and does not correspond to a Twitch ID.
 
