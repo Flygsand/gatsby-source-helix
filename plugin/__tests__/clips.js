@@ -3,7 +3,7 @@ const { request, gql } = require('graphql-request');
 const { ClientCredentialsAuthProvider } = require('@twurple/auth');
 const { ApiClient } = require('@twurple/api');
 const { rawDataSymbol } = require('@twurple/common');
-const { byProperty } = require('../../util/sort');
+const { byProperty } = require('../../test/support/sort');
 
 test('it creates nodes', async () => {
   const authProvider = new ClientCredentialsAuthProvider(env.TWITCH_CLIENT_ID, env.TWITCH_CLIENT_SECRET);
