@@ -16,4 +16,5 @@ exports.sourceNodes = async (gatsby, { clientId, clientSecret, ...options}) => {
   const client = new ApiClient({ authProvider });
 
   await clips.sourceNodes(gatsby, options, client);
+  await videos.sourceNodes(gatsby, options, client);
 };
