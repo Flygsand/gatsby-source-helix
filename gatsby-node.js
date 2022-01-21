@@ -1,13 +1,13 @@
 const { ClientCredentialsAuthProvider } = require('@twurple/auth');
 const { ApiClient } = require('@twurple/api');
 const clips = require('./plugin/clips');
+const videos = require('./plugin/videos');
 
 exports.pluginOptionsSchema = ({ Joi }) => {
   return Joi.object({
     clientId: Joi.string().required(),
     clientSecret: Joi.string().required(),
     userId: Joi.string().required(),
-    startDate: Joi.date(),
   });
 };
 

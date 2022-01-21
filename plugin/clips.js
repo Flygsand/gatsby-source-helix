@@ -1,5 +1,4 @@
 const { rawDataSymbol } = require('@twurple/common');
-const { relativeDays } = require('../util/date');
 
 const LAST_FETCH_DATE_CACHE_KEY = 'helix.clips.last_fetch_date';
 
@@ -11,12 +10,11 @@ exports.sourceNodes = async ({
   createContentDigest,
   createNodeId,
   cache,
-}, { userId, startDate }, client) => {
+}, { userId }, client) => {
   const now = new Date();
-  const lastFetchDate = new Date(cache.get(LAST_FETCH_DATE_CACHE_KEY));
   const filter = {
     endDate: now.toISOString(),
-    startDate: (isNaN(lastFetchDate) ? startDate || relativeDays(now, -14) : lastFetchDate).toISOString(),
+    startDate: new Date(await cache.get(LAST_FETCH_DATE_CACHE_KEY) || 0).toISOString(),
   };
 
   for await (const clip of client.clips.getClipsForBroadcasterPaginated(userId, filter)) {

@@ -74,5 +74,3 @@ replacing `<username>` with the actual name of the user whose ID you want to fet
 | `clientId`     | String | Twitch API Client ID                  | (required)    |
 | `clientSecret` | String | Twitch API Client Secret              | (required)    |
 | `userId`       | String | User ID filter                        | (required)    |
-| `startDate`    | Date   | Where to start fetching data (cached) | 14 days ago   |
-
