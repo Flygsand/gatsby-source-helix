@@ -9,7 +9,6 @@ exports.sourceNodes = async ({
   createNodeId
 }, { userId }, client) => {
   for await (const video of client.videos.getVideosByUserPaginated(userId)) {
-    console.log(video);
     createNode({
       ...video[rawDataSymbol],
       id: createNodeId(`${NODE_TYPE}-${video.id}`),
