@@ -15,4 +15,5 @@ RUN npm install --prefix test/site
 COPY . .
 WORKDIR /src/test/site
 
+ENV GATSBY_TELEMETRY_DISABLED=1
 ENTRYPOINT ["./entrypoint.sh"]
