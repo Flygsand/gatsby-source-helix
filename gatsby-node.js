@@ -11,6 +11,11 @@ exports.pluginOptionsSchema = ({ Joi }) => {
   });
 };
 
+exports.createSchemaCustomization = (gatsby) => {
+  clips.createSchemaCustomization(gatsby);
+  videos.createSchemaCustomization(gatsby);
+};
+
 exports.sourceNodes = async (gatsby, { clientId, clientSecret, ...options}) => {
   const authProvider = new ClientCredentialsAuthProvider(clientId, clientSecret);
   const client = new ApiClient({ authProvider });
