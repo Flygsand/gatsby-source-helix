@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "dotenv": "^14.3.0",
-    "graphql-request": "^3.6.1",
+    "graphql-request": "^5.1.0",
     "jest": "^27.4.0"
   }
 }
