@@ -16,7 +16,7 @@
   "dependencies": {
     "@twurple/api": "^5.0.9",
     "@twurple/auth": "^5.0.9",
-    "@twurple/common": "^5.0.9"
+    "@twurple/common": "^6.0.2"
   },
   "devDependencies": {
     "dotenv": "^14.3.0",
